@@ -9,15 +9,25 @@
         count++;    // インクリメント
         console.log(count);
     }
+    
+    const clickHandler2 = () => {
+        count--;    // デクリメント
+        console.log(count);
+    }
 </script>
 
 <!-- html -->
 <body>
-    <h1>
-        {count}
-    </h1>
+    <h1>{name}</h1>
+    
+    {count}
+
     <button on:click={clickHandler}>
         <p>＋</p>
+    </button>
+
+    <button on:click={clickHandler2}>
+        <p>ー</p>
     </button>
 </body>
 
